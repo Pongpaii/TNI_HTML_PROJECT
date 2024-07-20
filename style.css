@@ -1,0 +1,175 @@
+/* CSS Document */
+body{
+	margin : 0px;
+	 font-family: 'Noto Sans Thai', sans-serif;
+	font-size: 18px;
+	color: #3D3D3D;
+	
+}
+h1,h2,h3{
+	margin:0px 0px 10px 0px;
+}
+.container{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+
+	 margin: 10px;
+	 padding: 10px;
+}
+.centered-container {
+    margin: 0 auto; /* กำหนดการจัดตำแหน่งให้อยู่ตรงกลางแนวนอน */
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
+    padding: 20px; /* กำหนด padding ถ้าต้องการ */
+}
+
+.bgMAIN{
+	background-color: darkseagreen;
+}
+.bgGREEN{
+	background-color: lightseagreen;
+}
+.bglightgreen{
+	background-color: aquamarine;
+}
+.bgwhite{
+	background-color: white;
+}
+
+
+.clearfloat{
+	clear: both;
+}
+
+.mt10{
+	margin-top: 10px; 
+}
+.mb{
+	margin-bottom: 10px;
+}
+.input{
+	padding:6px;
+	border-radius: 6px;
+	border:1px  #AAAAAA solid;
+	
+	
+	width: 300px;
+	font-family: Tahoma;
+	font-size: 16px;
+	color:#3D3D3D;
+}
+.button{
+	width: 100px;
+	border: 1px #9C9C9C solid;
+	border-radius: 6px;
+	padding: 9px;
+	background-color: white;
+}
+
+ /* สไตล์ของปุ่มรูปภาพ */
+        .image-button {
+            cursor: pointer;
+        }
+
+        /* สไตล์ของอนิเมชันเมื่อรูปภาพเปลี่ยน */
+        #image {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+  body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+.black-opacity {
+   background-color: rgba(0, 0, 0, 0.5); /* สีดำและความทึบ 40% */
+    backdrop-filter: blur(10px); /* การเบลอขอบ */
+    border-radius: 15px; /* ขอบโค้ง */
+}
+
+.white-opacity {
+   background-color: rgba(255, 255, 255, 0.6); /* สีดำและความทึบ 40% */
+    backdrop-filter: blur(10px); /* การเบลอขอบ */
+    border-radius: 15px; /* ขอบโค้ง */
+}
+
+  .navbar {
+    background-color: white; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px; /* ระยะห่างของส่วนของ Navbar */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* เงาใต้ Navbar */
+}
+
+/* โลโก้ */
+.logo {
+    font-size: 24px;
+	color: #199CF4;
+    font-weight: bold;
+}
+
+/* ปุ่ม Navbar */
+.nav-button {
+
+    width: 100px;
+    height: 40px;
+    margin: 0 0px; 
+    cursor: pointer;
+	align-items: center;
+    
+}
+.home-button {
+
+    margin: 0 0px; 
+    cursor: pointer;
+	align-items: center;
+    
+}
+.home-button:hover {
+    transform: scale(0.8); /* ขยายขนาดปุ่มตอนชี้เม้าส์ */
+    filter: brightness(1.2); /* เรืองแสง */
+}
+.nav-button:hover {
+    transform: scale(1.1); /* ขยายขนาดปุ่มตอนชี้เม้าส์ */
+    filter: brightness(1.2); /* เรืองแสง */
+}
+
+
+
+
+
+.image-small {
+    transform: scale(0.7);
+}
+
+.image-small2 {
+    transform: scale(0.5);
+}
+.image-bigger {
+    transform: scale(1.2);
+}
+
+.col1, .col2 {
+	margin : 0px;
+    padding: 3rem;
+    background-color: #333;
+    color: white;
+	
+}
+.col2 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('image/FONT/NotoSansThai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ .animate-on-load {
+            opacity: 0;
+            transform: translateY(50px); /* เลื่อนขึ้นจากด้านล่าง */
+            transition: opacity 1s, transform 1s; /* ความเร็วของอนิเมชัน */
+        }

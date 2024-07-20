@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHARACTERS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet"><!--linkstyle_sheet-->
+	<script src="myScript.js"></script>
+</head>
+
+<body background="image/bgcahr.png">
+  <div class="navbar">
+        <div class="logo">
+            <span>POIP WORLD</span>
+        </div>
+        <div class="nav-buttons">
+ <a href="home.html"><img src="image/NAVBARBUTTON-01.png" alt="HOME" class="nav-button"></a>
+    <a href="character.html"><img src="image/NAVBARBUTTON-02.png" alt="CHARACTER" class="nav-button"></a>
+    <a href="artwork.html"><img src="image/NAVBARBUTTON-03.png" alt="ARTWORK" class="nav-button"></a>
+    <a href="about.html"><img src="image/NAVBARBUTTON-04.png" alt="ABOUT" class="nav-button"></a>
+
+        </div>
+    </div>
+	
+    <div id="container" class="container centered-container animate-on-load">
+        <div class="row mt-3 g-0" align="left" id="row1">
+<div id="col1" class="col-lg p-3 bggray text-white mt-3 rounded-start " align="center">
+	
+	<img id="image" src="image/NEON.png"><br><br>
+			<!-- 11 ปุ่มรูปภาพ -->
+    <img id="neonButton" class="image-button image-small" src="image/NEON-BUT.png" alt="NEON" onclick="changeImage('image/NEON.png')">
+    <img id="changButton" class="image-button image-small" src="image/CHANG-BUT.png"  alt="CHANG" onclick="changeImage('image/CHANG.png')">
+	<img id="envyButton" class="image-button image-small" src="image/ENVY-BUT.png"  alt="ENVY" onclick="changeImage('image/ENVY.png')">
+	<img id="kjButton" class="image-button image-small" src="image/KJ-BUT.png"  alt="KJ" onclick="changeImage('image/KJ.png')">	<br>
+	<img id="kmButton" class="image-button image-small" src="image/KUMAN-BUT.png"  alt="KJ" onclick="changeImage('image/KUMAN.png')">	
+	<img id="cmButton" class="image-button image-small" src="image/CANDYMAN-BUT.png"  alt="KJ" onclick="changeImage('image/CANDYMAN.png')">	
+	<img id="spikeButton" class="image-button image-small" src="image/SPIKE-BUT.png"  alt="KJ" onclick="changeImage('image/SPIKE.png')">	
+	<img id="rocketButton" class="image-button image-small" src="image/ROCKET-BUT.png"  alt="KJ" onclick="changeImage('image/ROCKET.png')">	
+	<img id="goatButton" class="image-button image-small" src="image/GOAT-BUT.png"  alt="KJ" onclick="changeImage('image/GOAT.png')">	
+	</div>
+			
+			<!--รายละเอียด-->
+    <div id="col2" class="col-lg p-5 bggray white-opacity rounded-end mt-3" >
+		 <p><h1>The Deep Dungeon</h1><br> 	Adventure in a deep dungeon full of danger<br> and the monsters waiting to attack your team</p>
+	</div>
+ 	</div>
+        </div>
+    
+
+
+    <script>
+		
+        function changeImage(newImage) {
+            const image = document.getElementById('image');
+            image.style.opacity = '0'; // ตั้งค่าความทึบให้น้อยลง
+            setTimeout(function () {
+                image.src = newImage;
+                image.style.opacity = '1'; // ตั้งค่าความทึบให้กลับมาเป็น 1
+            }, 500); // เวลาอนิเมชัน 0.5 วินาที (500 มิลลิวินาที)
+			}
+			// เมื่อคลิกปุ่ม Neon
+document.getElementById('neonButton').addEventListener('click', function() {
+    // เปลี่ยนเนื้อหาของ col2 เป็น "ประวัติของ NEON"
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ NEON</h1> A young man from the countryside who grew up in a village of swordsmiths. He had mastered swordsmanship and he is a leader of THEWOLF clan</p>';
+});
+
+// เมื่อคลิกปุ่ม Chang
+document.getElementById('changButton').addEventListener('click', function() {
+    // เปลี่ยนเนื้อหาของ col2 เป็น "ประวัติของ CHANG"
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ CHANG  </h1>A fisherman who has always been out on his boat to feed himself. One day there was a shipwreck from a sea monster and He lost his left arm and later had An illegal doctor offers an arm for him and he accept that offer.But the trade offer of that arm was to fight for the doctors company.To clear dungeons(the deep dungeon) </p>';
+});
+
+			//ขอคนอื่นๆ		
+	document.getElementById('envyButton').addEventListener('click', function() {
+    
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ ENVY  </h1>A mysterious person with special magical abilities. He gained magical powers from the jealousy accumulated since childhood. It gave him a strong magical power. </p>';
+
+});	
+		//ขอคนอื่นๆ		
+	document.getElementById('kjButton').addEventListener('click', function() {
+    
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ KJ </h1> 16-year-old boy born and raised in Slums Struggling to live in the slums and obsessed with killing people. Until a mental illness, but the ability his knife usage was very good.</p>';
+
+});
+		//ขอคนอื่นๆ		
+	document.getElementById('kmButton').addEventListener('click', function() {
+    
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ KUMAN </h1>The spirit of a child who was released from the golden child doll(กุมารทอง). and received the power of water making it possible to control the water independently. </p>';
+
+});		
+		//ขอคนอื่นๆ		
+	document.getElementById('cmButton').addEventListener('click', function() {
+    
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ CANDYMAN </h1>Candy man used to be a scientist, but by mistake while experimenting with magical powers, he turned into a candy man. </p>';
+
+});
+		//ขอคนอื่นๆ		
+	document.getElementById('spikeButton').addEventListener('click', function() {
+    
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ SPIKE </h1>He like punk. </p>';
+
+});		
+	document.getElementById('rocketButton').addEventListener('click', function() {
+    
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ ROCKET</h1>He is an assassin who works for the Shadow Organization, has a super power to hide in his shadows and hes very strong. </p>';
+
+});
+	//ขอคนอื่นๆ		
+	document.getElementById('goatButton').addEventListener('click', function() {
+    
+    document.getElementById('col2').innerHTML = '<p><h1>ประวัติของ GOAT</h1> A goat that has been cloned but modified with the human body so that it can use its body like a human, and scientists have created powerful weapons for him to use. </p>';
+
+});
+
+        
+    </script>
+</body>
+</html>

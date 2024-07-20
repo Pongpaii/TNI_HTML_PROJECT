@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABOUT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet"><!--linkstyle_sheet-->
+	<script src="myScript.js"></script>
+</head>
+
+<body background="image/bgmain.png">
+  <div class="navbar">
+        <div class="logo">
+            <span>POIP WORLD</span>
+        </div>
+        <div class="nav-buttons">
+ <a href="home.html"><img src="image/NAVBARBUTTON-01.png" alt="HOME" class="nav-button"></a>
+    <a href="character.html"><img src="image/NAVBARBUTTON-02.png" alt="CHARACTER" class="nav-button"></a>
+    <a href="artwork.html"><img src="image/NAVBARBUTTON-03.png" alt="ARTWORK" class="nav-button"></a>
+    <a href="about.html"><img src="image/NAVBARBUTTON-04.png" alt="ABOUT" class="nav-button"></a>
+
+        </div>
+    </div>
+	
+    <div id="container" class="container centered-container animate-on-load">
+        <img src="image/bookprofile.png" class="img-fluid">
+    </div>
+
+
+    <script>
+
+        function changeImage(newImage) {
+            const image = document.getElementById('image');
+            image.style.opacity = '0'; // ตั้งค่าopacityน้อยลง
+            setTimeout(function () {
+                image.src = newImage;
+                image.style.opacity = '1'; // ตั้งค่าopacityให้กลับมาเป็น 1
+            }, 500); // เวลาอนิเมชัน
+        }
+    </script>
+</body>
+</html>
